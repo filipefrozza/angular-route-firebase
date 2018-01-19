@@ -1,0 +1,15 @@
+<nav>
+	<ul>
+		<li><a href="{{url}}">Home</a></li>
+		<li><a href="{{url}}/produtos">Produtos</a></li>
+		<li><a href="{{url}}/teste">Teste</a></li>
+	</ul>
+	<div>
+		<div ng-if="!user">
+			<a href="{{url}}/login">Logar</a>
+		</div>
+		<div ng-if="user">
+			<p>{{user.displayName?user.displayName:user.email}} <a href="#" ng-click="logout()">Sair</a></p>
+		</div>
+	</div>
+</nav>
