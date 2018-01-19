@@ -31,7 +31,7 @@ angular.module('angularfirebase')
 		});
 	})
 	.controller('produto', function($scope, $firebaseArray, $firebaseAuth){
-		$scope.url = window.location.origin+(window.location.origin=='http://filipefrozza'?'/angular-route-firebase':'');
+		$scope.url = window.location.origin+(window.location.origin=='http://localhost'?'/angular-route-firebase':'');
 		$scope.auth = $firebaseAuth();
 
 		$scope.user = $scope.auth.$getAuth();
@@ -53,7 +53,7 @@ angular.module('angularfirebase')
 	    });
 	})
 	.controller('home', function($scope, $firebaseAuth){
-		$scope.url = window.location.origin+(window.location.origin=='http://filipefrozza'?'/angular-route-firebase':'');
+		$scope.url = window.location.origin+(window.location.origin=='http://localhost'?'/angular-route-firebase':'');
 		$scope.auth = $firebaseAuth();
 
 		$scope.auth.$onAuthStateChanged(function(firebaseUser) {
@@ -63,7 +63,7 @@ angular.module('angularfirebase')
 		$scope.user = $scope.auth.$getAuth();
 	})
 	.controller('login', function($scope, $cookies, $firebaseAuth){
-		$scope.url = window.location.origin+(window.location.origin=='http://filipefrozza'?'/angular-route-firebase':'');
+		$scope.url = window.location.origin+(window.location.origin=='http://localhost'?'/angular-route-firebase':'');
 		$scope.auth = $firebaseAuth();
 
 		$scope.logar = function(user) {
@@ -73,7 +73,7 @@ angular.module('angularfirebase')
 			).then(function(user){
 				alert('logou como :', user.uid);
 				$cookies.putObject('user', user);
-				document.location.href = window.location.origin+(window.location.origin=='http://filipefrozza'?'/angular-route-firebase':'');
+				document.location.href = window.location.origin+(window.location.origin=='http://localhost'?'/angular-route-firebase':'');
 			}, function(error){
 				if(error == 'INVALID_EMAIL') {
 					console.log('Email invalido ou não cadastrado');
