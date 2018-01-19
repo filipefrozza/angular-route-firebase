@@ -1,15 +1,16 @@
 <app-header></app-header>
-<app-nav></app-nav>
 <section>
-	<div>
-		<h1>Produtos</h1>
-		<div ng-if="!user">
-			<h3>Você deve logar para acessar</h3>
-		</div>
-		<div>
-			<ul>
-				<li ng-repeat="produto in produtos">{{produto.nome}}</li>
-			</ul>
+	<div class="container">
+		<div class="row">
+			<h1>Produtos</h1>
+			<div ng-if="!user">
+				<h3>Você deve logar para acessar</h3>
+			</div>
+			<div>
+				<ul>
+					<li ng-repeat="produto in produtos">{{produto.nome}}</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </section>
