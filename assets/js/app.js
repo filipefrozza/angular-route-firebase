@@ -86,7 +86,7 @@ angular.module('angularfirebase')
 		};
 
 		$scope.cadastrar = function(user) {
-			$scope.authObj.$createUserWithEmailAndPassword(
+			$scope.auth.$createUserWithEmailAndPassword(
 				user.email,
 				user.senha
 			).then(function(firebaseUser) {
