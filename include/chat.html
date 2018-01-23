@@ -1,9 +1,10 @@
 <div ng-if="user">
-	<img class="open-chat" ng-src="{{url}}/imagens/chat.png" ng-click="abrirChat();">
+	<img class="open-chat" ng-src="{{url}}/imagens/chat.png" ng-click="toggleChat();">
 </div>
-<div ng-if="chat" class="chat-conversas">
+<div ng-show="chat" class="chat-conversas">
 	<div class="chat-amigo" ng-repeat="amigo in amigos">
 		<img ng-src="{{url}}/imagens/users/{{amigo.foto}}">
 		{{amigo.nome}}
 	</div>
+	<a href="#" ng-click="toggleChat();">Fechar</a>
 </div>

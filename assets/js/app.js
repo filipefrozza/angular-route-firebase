@@ -131,8 +131,8 @@ angular.module('angularfirebase')
 	      };
 	    });
 
-	    $scope.abrirChat = function(){
-	    	$scope.chat = true;
+	    $scope.toggleChat = function(){
+	    	$scope.chat = !$scope.chat;
 	    };
 	})
 	.directive('appHeader', function(){
