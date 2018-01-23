@@ -92,6 +92,17 @@ angular.module('angularfirebase')
 			window.location.reload();
 		}
 	})
+	.controller('chat', function($scope, $firebaseAuth){
+		$scope.auth = $firebaseAuth();
+
+		$scope.auth.$onAuthStateChanged(function(firebaseUser) {
+	      $scope.user = firebaseUser;
+
+	      $scope.teste = "olar";
+
+	      if(!$scope.user) return;
+	    });
+	})
 	.directive('appHeader', function(){
 		return {
 			restrict: 'AE',
@@ -110,6 +121,14 @@ angular.module('angularfirebase')
 		return {
 			restrict: 'AE',
 			templateUrl: 'include/footer.html'
+		}
+	})
+	.directive('chat', function(){
+		return {
+			restrict: 'AE',
+			scope: true,
+			templateUrl: 'include/chat.html',
+			controller: 'chat'
 		}
 	});
 

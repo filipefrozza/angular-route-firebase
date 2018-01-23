@@ -2,9 +2,9 @@
 <section>
 	<div class="container">
 		<div class="row">
-			<form ng-submit="cadastrar(user)">
-				<input type="email" name="email" placeholder="Email" ng-model="user.email">
-				<input type="password" name="senha" placeholder="Senha" ng-model="user.senha">
+			<form ng-submit="cadastrar(cadastro)">
+				<input type="email" name="email" placeholder="Email" ng-model="cadastro.email">
+				<input type="password" name="senha" placeholder="Senha" ng-model="cadastro.senha">
 				<button type="submit">Criar</button>
 				<p>Já possui conta? <a href="{{url}}/login">Logar</a></p>
 			</form>
