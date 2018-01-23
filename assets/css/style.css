@@ -72,10 +72,47 @@ chat img.open-chat {
     box-sizing: content-box;
     border-color: #d80029;
     border-style: solid;
-    border-width: 7px 2px 0 2px;
-    border-radius: 3px 3px 0 0;
+    border-width: 25px 2px 0 2px;
+    border-radius: 10px 10px 0 0;
 }
 
-.chat-conversas img {
-	height: 50px;
+.chat-conversas .chat-amigo img {
+    height: 50px;
+    border-radius: 50%;
+}
+
+.barra-chat {
+    height: 25px;
+    width: 100%;
+    text-align: right;
+    position: absolute;
+    top: -25px;
+}
+
+.barra-chat img {
+    padding-right: 5px;
+}
+
+.chat-amigo {
+    padding: 5px 10px;
+}
+
+.chat-amigo span {
+    padding-left: 8px;
+}
+
+.status {
+    font-size: 25px;
+    float: right;
+    position: relative;
+    top: 6px;
+    color: gray;
+}
+
+.status.ausente {
+    color: red;
+}
+
+.status.online {
+    color: green;
 }

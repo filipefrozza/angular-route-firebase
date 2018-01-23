@@ -118,8 +118,14 @@ angular.module('angularfirebase')
 
 	      $scope.amigos = {
 	      	"YFghawefda": {
-	      		"nome": "teste",
-	      		"foto": "teste.jpg"
+	      		"nome": "Filipe Frozza",
+	      		"foto": "teste.jpg",
+	      		"status": "online"
+	      	},
+	      	"sadasdas": {
+	      		"nome": "Marcelo Joras",
+	      		"foto": "teste2.png",
+	      		"status": "ausente"
 	      	}
 	      };
 
