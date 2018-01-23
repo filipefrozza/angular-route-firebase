@@ -114,6 +114,19 @@ angular.module('angularfirebase')
 	      $scope.teste = "olar";
 
 	      if(!$scope.user) return;
+
+	      $scope.amigos = {
+	      	"YFghawefda": {
+	      		"nome": "teste"
+	      	}
+	      };
+
+	      $scope.conversas = {
+	      	"Yhawfawfaw": {
+	      		"Yhawfawfaw": "oi",
+	      		"meuid": "ola"
+	      	}
+	      };
 	    });
 	})
 	.directive('appHeader', function(){
