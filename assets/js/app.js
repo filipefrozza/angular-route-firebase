@@ -106,6 +106,7 @@ angular.module('angularfirebase')
 		}
 	})
 	.controller('chat', function($scope, $firebaseAuth){
+		$scope.url = window.location.origin+(window.location.origin=='http://localhost'?'/angular-route-firebase':'');
 		$scope.auth = $firebaseAuth();
 
 		$scope.auth.$onAuthStateChanged(function(firebaseUser) {
@@ -117,7 +118,8 @@ angular.module('angularfirebase')
 
 	      $scope.amigos = {
 	      	"YFghawefda": {
-	      		"nome": "teste"
+	      		"nome": "teste",
+	      		"foto": "teste.jpg"
 	      	}
 	      };
 
@@ -128,6 +130,10 @@ angular.module('angularfirebase')
 	      	}
 	      };
 	    });
+
+	    $scope.abrirChat = function(){
+	    	$scope.chat = true;
+	    };
 	})
 	.directive('appHeader', function(){
 		return {
