@@ -84,6 +84,19 @@ angular.module('angularfirebase')
 				}
 			});
 		};
+
+		$scope.cadastrar = function(user) {
+			$scope.authObj.$createUserWithEmailAndPassword(
+				user.email,
+				user.senha
+			).then(function(firebaseUser) {
+				alert("criado");
+				console.log("User " + firebaseUser.uid + " created successfully!");
+				window.location.href = window.location.origin+(window.location.origin=='http://localhost'?'/angular-route-firebase':'')+"/login";
+			}).catch(function(error) {
+				console.error("Error: ", error);
+			});
+		}
 	})
 	.controller('nav', function($scope, $firebaseAuth){
 		$scope.auth = $firebaseAuth();
