@@ -14,19 +14,14 @@
 	<script src="assets/js/angularfire.js"></script>
 	<!-- Opera Speed Dial Favicon -->
 	<link rel="icon" type="image/png" href="imagens/favicon.png">
-
 	<!-- Standard Favicon -->
 	<link rel="icon" type="image/x-icon" href="imagens/favicon.png">
-
 	<!-- For iPhone 4 Retina display: -->
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="imagens/favicon.png">
-
 	<!-- For iPad: -->
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="imagens/favicon.png">
-
 	<!-- For iPhone: -->
 	<link rel="apple-touch-icon-precomposed" href="imagens/favicon.png">
-
 	<script>
 	  // Initialize Firebase
 	  var config = {
@@ -39,7 +34,17 @@
 	  };
 	  firebase.initializeApp(config);
 	</script>
-	<script type="text/javascript" src="assets/js/app.js"></script>
+	<script type="text/javascript" src="app/app.js"></script>
+
+	<!-- modulos -->
+	<script type="text/javascript" src="app/modulo/chat/controller.js"></script>
+	<script type="text/javascript" src="app/modulo/chat/directive.js"></script>
+	<script type="text/javascript" src="app/modulo/footer/directive.js"></script>
+	<script type="text/javascript" src="app/modulo/header/directive.js"></script>
+	<script type="text/javascript" src="app/modulo/nav/controller.js"></script>
+	<script type="text/javascript" src="app/modulo/nav/directive.js"></script>
+	<script type="text/javascript" src="app/pagina/conta/controller.js"></script>
+
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<base href="/angular-route-firebase/">
