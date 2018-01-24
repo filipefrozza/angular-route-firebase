@@ -8,7 +8,7 @@ angular.module(APP)
 				user.email, 
 				user.senha
 			).then(function(user){
-				alert('logou como :', user.uid);
+				alert('logou como :' + user.uid);
 				$cookies.putObject('user', user);
 				document.location.href = window.location.origin+(window.location.origin=='http://localhost'?'/angular-route-firebase':'');
 			}, function(error){
