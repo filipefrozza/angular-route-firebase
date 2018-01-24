@@ -116,3 +116,43 @@ chat img.open-chat {
 .status.online {
     color: green;
 }
+
+.chat-container {
+    height: 400px;
+    width: 640px;
+    overflow-x: hidden;
+}
+
+.chat-conversa, .chat-amigos {
+    width: 320px;
+    float:  left;
+    overflow-y: scroll;
+    height: 400px;
+}
+
+.chat-amigos::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.chat-amigos::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+.chat-amigos::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,.3);
+    background-color: #555;
+}
+
+.chat-amigos {
+    margin-left: 0px;
+    transition: all .3s ease-in-out;
+}
+
+.chat-amigos.hidden {
+    margin-left:  -320px;
+    transition: all .3s ease-in-out;
+}

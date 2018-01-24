@@ -20,6 +20,71 @@ angular.module(APP)
 	      		"nome": "Marcelo Joras",
 	      		"foto": "teste2.png",
 	      		"status": "ausente"
+	      	},
+	      	"ddfhsdrh": {
+	      		"nome": "Marcelo Joras",
+	      		"foto": "teste2.png",
+	      		"status": "ausente"
+	      	},
+	      	"sdrhsrdh": {
+	      		"nome": "Marcelo Joras",
+	      		"foto": "teste2.png",
+	      		"status": "ausente"
+	      	},
+	      	"sdfhsdrh": {
+	      		"nome": "Marcelo Joras",
+	      		"foto": "teste2.png",
+	      		"status": "online"
+	      	},
+	      	"sdrhsrdh": {
+	      		"nome": "Marcelo Joras",
+	      		"foto": "teste2.png",
+	      		"status": "ausente"
+	      	},
+	      	"sdfhsdfh": {
+	      		"nome": "Marcelo Joras",
+	      		"foto": "teste2.png",
+	      		"status": "ausente"
+	      	},
+	      	"sdfhsdfhsre": {
+	      		"nome": "Marcelo Joras",
+	      		"foto": "teste2.png",
+	      		"status": "ausente"
+	      	},
+	      	"sdrhsdrh": {
+	      		"nome": "Marcelo Joras",
+	      		"foto": "teste2.png",
+	      		"status": "ausente"
+	      	},
+	      	"sdfgsdfg": {
+	      		"nome": "Marcelo Joras",
+	      		"foto": "teste2.png",
+	      		"status": "online"
+	      	},
+	      	"etwetwet": {
+	      		"nome": "Marcelo Joras",
+	      		"foto": "teste2.png",
+	      		"status": "ausente"
+	      	},
+	      	"cvbdfhd": {
+	      		"nome": "Marcelo Joras",
+	      		"foto": "teste2.png",
+	      		"status": "ausente"
+	      	},
+	      	"kgkfth": {
+	      		"nome": "Marcelo Joras",
+	      		"foto": "teste2.png",
+	      		"status": "ausente"
+	      	},
+	      	"jdrgdrgj": {
+	      		"nome": "Marcelo Joras",
+	      		"foto": "teste2.png",
+	      		"status": "ausente"
+	      	},
+	      	"drgsejrd": {
+	      		"nome": "Marcelo Joras",
+	      		"foto": "teste2.png",
+	      		"status": "ausente"
 	      	}
 	      };
 

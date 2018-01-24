@@ -5,9 +5,16 @@
 	<div class="barra-chat">
 		<a href="#" ng-click="toggleChat();"><img ng-src="{{url}}/imagens/exit.png"></a>
 	</div>
-	<div class="chat-amigo" ng-repeat="amigo in amigos">
-		<img ng-src="{{url}}/imagens/users/{{amigo.foto}}">
-		<span>{{amigo.nome}}</span>
-		<span class="status" ng-class="amigo.status">•</span>
+	<div class="chat-container">
+		<div class="chat-amigos">
+			<div class="chat-amigo" ng-repeat="amigo in amigos">
+				<img ng-src="{{url}}/imagens/users/{{amigo.foto}}">
+				<span>{{amigo.nome}}</span>
+				<span class="status" ng-class="amigo.status">•</span>
+			</div>
+		</div>
+		<div class="chat-conversa">
+			<p>conversa</p>
+		</div>
 	</div>
 </div>
