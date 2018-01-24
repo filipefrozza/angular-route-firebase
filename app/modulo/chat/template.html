@@ -6,8 +6,8 @@
 		<a href="#" ng-click="toggleChat();"><img ng-src="{{url}}/imagens/exit.png"></a>
 	</div>
 	<div class="chat-container">
-		<div class="chat-amigos">
-			<div class="chat-amigo" ng-repeat="amigo in amigos">
+		<div class="chat-amigos" ng-class="{'hidden':conversa}">
+			<div class="chat-amigo" ng-repeat="amigo in amigos" ng-click="abrirConversa(amigo);">
 				<img ng-src="{{url}}/imagens/users/{{amigo.foto}}">
 				<span>{{amigo.nome}}</span>
 				<span class="status" ng-class="amigo.status">•</span>

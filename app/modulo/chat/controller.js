@@ -94,6 +94,10 @@ angular.module(APP)
 	      		"meuid": "ola"
 	      	}
 	      };
+
+	      $scope.abrirConversa = function(amigo) {
+	      	$scope.conversa = amigo;
+	      };
 	    });
 
 	    $scope.toggleChat = function(){
