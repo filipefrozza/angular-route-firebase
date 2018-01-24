@@ -1,6 +1,8 @@
-angular.module('angularfirebase', ['ngRoute', 'ngCookies', 'firebase']);
+APP = 'angularfirebase';
 
-angular.module('angularfirebase')
+angular.module(APP, ['ngRoute', 'ngCookies', 'firebase']);
+
+angular.module(APP)
 	.config(function($routeProvider, $locationProvider){
 		$locationProvider.hashPrefix('');
 		$routeProvider
