@@ -5,5 +5,5 @@ angular.module(APP)
 			$scope.auth.$signOut();
 			$cookies.remove('user');
 			window.location.reload();
-		}
+		};
 	});

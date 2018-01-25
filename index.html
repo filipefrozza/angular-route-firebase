@@ -44,14 +44,15 @@
 	<script type="text/javascript" src="app/modulo/nav/controller.js"></script>
 	<script type="text/javascript" src="app/modulo/nav/directive.js"></script>
 	<script type="text/javascript" src="app/pagina/conta/controller.js"></script>
+	<script type="text/javascript" src="app/service/authenticate.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<base href="/angular-route-firebase/">
 	<meta charset="utf-8">
 </head>
-<body>
-	<ng-view ng-controller="main"></ng-view>
+<body ng-controller="main">
+	<ng-view></ng-view>
 	<chat></chat>
 </body>
 </html>

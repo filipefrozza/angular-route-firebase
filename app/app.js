@@ -23,16 +23,17 @@ angular.module(APP)
 		  requireBase: false
 		});
 	})
-	.controller('main', function($scope, $firebaseAuth, $firebaseObject){
-		$scope.url = window.location.origin+(window.location.origin=='http://localhost'?'/angular-route-firebase':'');
-		$scope.auth = $firebaseAuth();
+	.controller('main', function($scope, $firebaseAuth, $firebaseObject, $rootScope, authenticate){
+		$rootScope.url = window.location.origin+(window.location.origin=='http://localhost'?'/angular-route-firebase':'');
 
-		$scope.auth.$onAuthStateChanged(function(firebaseUser) {
-	      	$scope.user = firebaseUser;
+		var callback = function(user){
+			$scope.user = user;
 
 	      	var ref = firebase.database().ref();
 		    var perfil = $firebaseObject(ref.child('perfil').child($scope.user.uid));
 
 		    $scope.perfil = perfil;
-	    });
+		};
+
+		authenticate.getAuth($firebaseAuth, callback);
 	});
