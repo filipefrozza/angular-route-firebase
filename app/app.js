@@ -17,6 +17,10 @@ angular.module(APP)
 				templateUrl: 'app/pagina/conta/cadastrar.html',
 				controller: 'login'
 			})
+			.when('/pessoas', {
+				templateUrl: 'app/pagina/pessoas/buscar.html',
+				controller: 'pessoa'
+			})
 			.otherwise({redirectTo: '/'});
 		$locationProvider.html5Mode({
 		  enabled: true,

@@ -1,0 +1,35 @@
+{
+  "amigos" : {
+    "djSUFhhWusVV6jh9aGBiepcsHmZ2" : {
+      "privacidade" : "aberta",
+      "yxvi7aSGXTOBLYRAooW9c3KhL7i2" : {
+        "conversa" : {
+          "dsgsehsehesfse" : {
+            "origem" : "sua",
+            "texto" : "oi"
+          }
+        },
+        "foto" : "teste2.png",
+        "nome" : "Marcelo Joras",
+        "uid" : "yxvi7aSGXTOBLYRAooW9c3KhL7i2"
+      }
+    }
+  },
+  "perfil" : {
+    "djSUFhhWusVV6jh9aGBiepcsHmZ2" : {
+      "foto" : "teste.jpg",
+      "nome" : "Filipe Frozza",
+      "uid" : "djSUFhhWusVV6jh9aGBiepcsHmZ2"
+    },
+    "teste123" : {
+      "foto" : "mickey.png",
+      "nome" : "Mickey",
+      "uid" : "teste123"
+    },
+    "yxvi7aSGXTOBLYRAooW9c3KhL7i2" : {
+      "foto" : "teste2.png",
+      "nome" : "Marcelo Joras",
+      "uid" : "yxvi7aSGXTOBLYRAooW9c3KhL7i2"
+    }
+  }
+}

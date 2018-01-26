@@ -1,0 +1,13 @@
+<app-header></app-header>
+<section>
+	<div class="container">
+		<div class="row">
+			<div ng-repeat="pessoa in pessoas" ng-if="user.uid != pessoa.uid">
+				<img ng-src="{{url}}/imagens/users/{{pessoa.foto}}" width="50px">
+				<p>{{pessoa.nome}}</p>
+				<a href="#" ng-click="adicionarPessoa(pessoa);">Adicionar</a>
+			</div>
+		</div>
+	</div>
+</section>
+<app-footer></app-footer>
